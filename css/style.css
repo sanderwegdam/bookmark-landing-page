@@ -1,0 +1,209 @@
+/* =====================================================================================
+    Important Areas
+======================================================================================*/
+
+/* ------------------------------------------------------------------------------------
+    Sub section
+--------------------------------------------------------------------------------------*/
+
+/* =====================================================================================
+    Table of contents
+======================================================================================*/
+
+/*----------------------------
+1.0 ROOT
+----------------------------
+2.0 GLOBAL CLASSES
+----------------------------
+3.0 MEDIA
+---------------------------- */
+
+/* =====================================================================================
+1.0 ROOT
+======================================================================================*/
+
+:root {
+  --Soft-Blue: hsl(231, 69%, 60%);
+  --Soft-Red: hsl(0, 94%, 66%);
+  --Grayish-Blue: hsl(229, 8%, 60%);
+  --Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+
+/* =====================================================================================
+2.0 GLOBAL CLASSES
+======================================================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Rubic', sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  margin-top: 150px;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+/* =====================================================================================
+3.0 MEDIA
+======================================================================================*/
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+
+  .container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*-------------------------- header -------------------------------*/
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .logo-header {
+    padding-top: 20px;
+  }
+
+  .icon-hamburger {
+    padding-top: 20px;
+    height: 36px;
+  }
+
+  .nav-content {
+    display: none;
+  }
+
+  .header-content {
+    margin-top: 50px;
+  }
+
+  .illustration-hero {
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+
+  .placeholder-head {
+    background: var(--Soft-Blue);
+    width: 400px;
+    height: 220px;
+    margin-top: -230px;
+    margin-left: 150px;
+    border-bottom-left-radius: 30%;
+    z-index: -1;
+  }
+
+  .header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-content h1{
+    text-align: center;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    }
+
+    .header-content p{
+      padding-inline: 0px;
+      padding-block: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .button-container{
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+    }
+
+    button{
+      padding-inline: 15px;
+      padding-block: 10px;
+    }
+
+    .chrome-button{
+      background-color: var(--Soft-Blue);
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .firefox-button{
+      background-color: #e2e1e1;
+      color: #333;
+      border-radius: 5px;
+      border: none;
+      font-weight: bold;
+    }
+
+    /*-------------------------- section -------------------------------*/
+
+    .section-features{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-features p{
+      width: 320px;
+      padding-block: 20px;
+      text-align: center;
+    }
+
+    .features-title{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .features-title a{
+      font-weight: bold;
+      color: var(--Grayish-Blue);
+    }
+
+    .hr-text{
+      width: 320px;
+      margin: 20px 0;
+      color: var(--Grayish-Blue);
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+
+}
