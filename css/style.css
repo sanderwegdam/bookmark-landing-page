@@ -300,12 +300,36 @@ p {
   }
 
   .frequently-ask {
-    padding-block: 50px;
+    padding-block: 30px;
   }
 
   .frequently-ask h1 {
     width: 300px;
     text-align: center;
+    padding-block: 20px;
+  }
+
+  .question{
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .question img{
+    height: 10px;
+  }
+
+  .answer{
+    text-align: left;
+  }
+
+  hr{
+    width: 340px;
+    margin: 20px auto;
+  }
+
+  .answer{
     padding-block: 20px;
   }
 
