@@ -24,7 +24,7 @@
 
 :root {
   --Soft-Blue: hsl(231, 69%, 60%);
-  --Soft-Red: hsl(0, 94%, 66%);
+  --Soft-Red: #fa5757;
   --Grayish-Blue: hsl(229, 8%, 60%);
   --Very-Dark-Blue: hsl(229, 31%, 21%);
 }
@@ -179,6 +179,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   .section-features p {
@@ -192,6 +193,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
   }
 
   .features-title a {
@@ -199,21 +201,75 @@ p {
     color: var(--Grayish-Blue);
   }
 
+  .features-title a:hover{
+    color: var(--Dark-Blue);
+    cursor: pointer;
+  }
+
+  .hr-text-1 {
+    width: 140px;
+    background-color: red;
+    height: 4px;
+    border: none;
+    top: 249px;
+    position: absolute;
+    display: none;
+    }
+
+    .hr-text-2 {
+    width: 140px;
+    background-color: red;
+    height: 4px;
+    border: none;
+    top: 310px;
+    position: absolute;
+    display: none;
+    }
+
+    .hr-text-3 {
+    width: 140px;
+    background-color: red;
+    height: 4px;
+    border: none;
+    top: 371px;
+    position: absolute;
+    display: none;
+    }
+
+    .active-1 ~ .hr-text-1,
+    .active-2 ~ .hr-text-2,
+    .active-3 ~ .hr-text-3, {
+    display: block;
+    }
+
   .hr-text {
     width: 320px;
     margin: 20px 0;
     color: var(--Grayish-Blue);
+    height: 3px;
   }
 
-  .section-content {
+  .section-container{
+    position: relative;
+  }
+
+ .section {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
   }
 
-  .section-content img {
+  .active{
+    display: block;
+  }
+
+  .section img {
     max-width: 80%;
   }
 
@@ -314,14 +370,11 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
   }
 
   .question img{
     height: 10px;
-  }
-
-  .answer{
-    text-align: left;
   }
 
   hr{
@@ -330,6 +383,7 @@ p {
   }
 
   .answer{
+    text-align: left;
     padding-block: 20px;
   }
 
