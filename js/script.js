@@ -20,9 +20,9 @@ questions.forEach(question => {
         a.style.display = 'none';
       });
 
-    document.querySelectorAll('.icon').forEach(arrow => {
-          arrow.src = 'images/icon-arrow-down.png'; // Reset all arrows
-    });
+      document.querySelectorAll('.icon').forEach(arrow => {
+        arrow.src = 'images/icon-arrow-down.png'; // Reset all arrows
+      });
 
       answer.style.display = 'block';
       arrow.src = 'images/icon-arrow-up.png';
@@ -35,42 +35,32 @@ const second = document.querySelector('.a2');
 const third = document.querySelector('.a3');
 const sections = document.querySelectorAll('.section');
 
-first.addEventListener('click', function() {
+first.addEventListener('click', function () {
   this.classList.add('active-1'); // Voeg de CSS-klasse 'active-1' toe wanneer erop wordt geklikt
   second.classList.remove('active-2'); // Verwijder de CSS-klasse 'active-2' van het tweede element
   third.classList.remove('active-3'); // Verwijder de CSS-klasse 'active-3' van het derde element
+  sections.forEach(section => {
+    section.classList.remove('active');
+  });
+  document.querySelector('.section-1').classList.add('active');
 });
 
-second.addEventListener('click', function() {
+second.addEventListener('click', function () {
   this.classList.add('active-2'); // Voeg de CSS-klasse 'active-2' toe wanneer erop wordt geklikt
   first.classList.remove('active-1'); // Verwijder de CSS-klasse 'active-1' van het eerste element
   third.classList.remove('active-3'); // Verwijder de CSS-klasse 'active-3' van het derde element
+  sections.forEach(section => {
+    section.classList.remove('active');
+  });
+  document.querySelector('.section-2').classList.add('active');
 });
 
-third.addEventListener('click', function() {
+third.addEventListener('click', function () {
   this.classList.add('active-3'); // Voeg de CSS-klasse 'active-3' toe wanneer erop wordt geklikt
   first.classList.remove('active-1'); // Verwijder de CSS-klasse 'active-1' van het eerste element
   second.classList.remove('active-2'); // Verwijder de CSS-klasse 'active-2' van het tweede element
+  sections.forEach(section => {
+    section.classList.remove('active');
+  });
+  document.querySelector('.section-3').classList.add('active');
 });
-
-first.addEventListener('click', function() {
-    sections.forEach(section => {
-        section.classList.remove('active');
-    });
-    document.querySelector('.section-1').classList.add('active');
-});
-
-second.addEventListener('click', function() {
-    sections.forEach(section => {
-        section.classList.remove('active');
-    });
-    document.querySelector('.section-2').classList.add('active');
-});
-
-third.addEventListener('click', function() {
-    sections.forEach(section => {
-        section.classList.remove('active');
-    });
-    document.querySelector('.section-3').classList.add('active');
-});
-
