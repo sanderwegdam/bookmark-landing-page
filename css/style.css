@@ -94,6 +94,19 @@ p {
 
   .logo-header {
     padding-top: 20px;
+    z-index: 2;
+  }
+  .menu-links {
+    display: none;
+  }
+
+  .logo-header-links {
+   margin-right: 200px;
+  }
+
+  .icon-close {
+    margin-top: -20px;
+    padding-left: 270px;
   }
 
   .icon-hamburger {
@@ -101,22 +114,33 @@ p {
     height: 36px;
   }
 
-  .menu-links {
-    display: none;
+  .toggle-icon-hamburger {
+    z-index: 2;
+  }
+
+  .menu-links a {
+    padding-block: 10px;
+    color: white;
+    font-size: 20px;
+  }
+
+  .menu-links hr {
+    color: var(--Grayish-blue);
+    height: 2px;
   }
 
   .menu-open {
     display: flex;
     position: absolute;
     flex-direction: column;
-    width: 420px;
-    height: 320px;
-    top: 80px;
-    background-color: white;
+    width: 100vw;
+    height: 700px;
+    top: -20px;
+    left: -53px;
+    background-color: rgba(37, 43, 70, 0.902);
     justify-content: center;
     align-items: center;
     z-index: 2;
-    position: absolute;
   }
 
   .header-content {
@@ -322,7 +346,6 @@ p {
 
   .section-download p {
     padding-block: 20px;
-
   }
 
   .extension-content {
@@ -474,6 +497,7 @@ p {
 
   .footer-bottom p{
     padding-block: 10px;
+    font-weight: 700;
   }
 
   .social-icons{

@@ -12,7 +12,6 @@ iconHamburger.addEventListener("click", function (e) {
   } else {
     // Anders open het menu
     menu.classList.add("menu-open");
-    toggleHamburgerIcon.src = "images/icon-close.svg";
   }
 });
 
@@ -21,11 +20,6 @@ iconHamburger.addEventListener("click", function (e) {
 document.addEventListener("click", function (e) {
   if (!menu.contains(e.target) && !iconHamburger.contains(e.target)) {
     // Als er buiten het menu en buiten het hamburgerpictogram wordt geklikt
-    // productMenu.style.display = "none";
-    // companyMenu.style.display = "none";
-    // connectMenu.style.display = "none";
     menu.classList.remove("menu-open");
-    // menu.classList.add("menu");
-
   }
 });
