@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index2.css">
     <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 
@@ -36,14 +37,18 @@
                 </div>
             </nav>
             <div class="header-content">
-                <img class="illustration-hero" src="images/illustration-hero.svg" alt="illustration-hero">
-                <div class="placeholder-head"></div>
-                <h1>A Simple Bookmark Manager</h1>
-                <p>A clean and simple interface to organize your favourite websites. Open a new
-                    browser tab and see your sites load instantly. Try it for free.</p>
-                <div class="button-container">
-                    <button class="chrome-button">Get it on Chrome</button>
-                    <button class="firefox-button">Get it on Firefox</button>
+                <div class="header-content-inner-1">
+                    <img class="illustration-hero" src="images/illustration-hero.svg" alt="illustration-hero">
+                    <div class="placeholder-head"></div>
+                </div>
+                <div class="header-content-inner-2">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>A clean and simple interface to organize your favourite websites. Open a new
+                        browser tab and see your sites load instantly. Try it for free.</p>
+                    <div class="button-container">
+                        <button class="chrome-button">Get it on Chrome</button>
+                        <button class="firefox-button">Get it on Firefox</button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -52,43 +57,58 @@
             <h1>Features</h1>
             <p>Our aim is to make it quick and easy for you to access your favourite websites.
                 Your bookmarks sync between your devices so you can access them on the go.</p>
-            <div class="features-title">
-                <hr class="hr-text">
-                <a class="a1 active-1">Simple Bookmarking</a>
-                <hr class="hr-text-1">
-                <hr class="hr-text">
-                <a class="a2">Speedy Searching</a>
-                <hr class="hr-text-2">
-                <hr class="hr-text">
-                <a class="a3">Easy Sharing</a>
-                <hr class="hr-text-3">
-                <hr class="hr-text">
+            <div class="features-content">
+                <div class="feature-content-inner">
+                    <hr class="hr-text">
+                    <a class="a1 active-1">Simple Bookmarking</a>
+                    <hr class="hr-text-1">
+                </div>
+                <div class="feature-content-inner">
+                    <hr class="hr-text">
+                    <a class="a2">Speedy Searching</a>
+                    <hr class="hr-text-2">
+                </div>
+                <div class="feature-content-inner">
+                    <hr class="hr-text">
+                    <a class="a3">Easy Sharing</a>
+                    <hr class="hr-text-3">
+                    <hr class="hr-text">
+                </div>
             </div>
+            <hr class="hr-features-content">
 
             <div class="section-container">
                 <div class="section section-1 active">
                     <img src="images/illustration-features-tab-1.svg" alt="Feature Illustration-bookmark">
-                    <div class="placeholder-middle"></div>
-                    <h1>Bookmark in one click</h1>
-                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
-                        gives you complete control over how you manage your favourite sites.</p>
-                    <button class="more-info">More Info</button>
+                    <div class="placeholder-middle-1"></div>
+                    <div class="section-inner">
+                        <h1>Bookmark in one click</h1>
+                        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                            gives you complete control over how you manage your favourite sites.</p>
+                        <button class="more-info">More Info</button>
+                    </div>
                 </div>
 
                 <div class="section section-2">
                     <img src="images/illustration-features-tab-2.svg" alt="Feature Illustration-intelligent">
-                    <h1>Intelligent search</h1>
-                    <p>Our powerful search feature will help you find saved sites in no time at all.
-                        No need to trawl through all of your bookmarks.</p>
-                    <button class="more-info">More Info</button>
+                    <div class="placeholder-middle-2"></div>
+                    <div class="section-inner">
+                        <h1>Intelligent search</h1>
+                        <p>Our powerful search feature will help you find saved sites in no time at all.
+                            No need to trawl through all of your bookmarks.</p>
+                        <button class="more-info">More Info</button>
+                    </div>
                 </div>
 
                 <div class="section section-3">
                     <img src="images/illustration-features-tab-3.svg" alt="Feature Illustration-share">
-                    <h1>Share your bookmarks</h1>
-                    <p>Easily share your bookmarks and collections with others. Create a shareable
-                        link that you can send at the click of a button.</p>
-                    <button class="more-info">More Info</button>
+                    <div class="placeholder-middle-3"></div>
+                    <div class="section-inner">
+                        <h1>Share your bookmarks</h1>
+                        <p>Easily share your bookmarks and collections with others. Create a shareable
+                            link that you can send at the click of a button.</p>
+                        <button class="more-info">More Info</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -187,7 +207,8 @@
                 <p>35,000+ ALREADY JOINED</p>
                 <h1>Stay up-to-date with what we’re doing</h1>
                 <div class="input-content">
-                    <input type="text" placeholder="Enter your email address" />
+                    <input name="email" id="email" type="text" autocomplete="off"
+                        placeholder="Enter your email address" />
                     <button class="contact">Contact Us</button>
                 </div>
             </div>
