@@ -1,9 +1,14 @@
 const menu = document.querySelector(".menu-links");
 iconHamburger = document.querySelector(".icon-hamburger");
 toggleHamburgerIcon = document.querySelector(".toggle-icon-hamburger");
+closeBtn = document.querySelector(".icon-close");
 
-iconHamburger.addEventListener("click", function (e) {
-  e.preventDefault();
+closeBtn.addEventListener("click", () => {
+  menu.classList.remove("menu-open");
+});
+
+
+iconHamburger.addEventListener("click", function () {
 
   if (menu.classList.contains("menu-open")) {
     // Als het menu al open is, sluit het
