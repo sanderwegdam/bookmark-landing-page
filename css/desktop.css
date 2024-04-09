@@ -33,18 +33,13 @@
 3.0 MEDIA
 ======================================================================================*/
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header-content{
-    margin-left: -370px;
-  }
-
-  .menu-links{
-    margin-left: -200px;
-  }
-}
 
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
+
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1920px) {
 
   .container {
     max-width: 90%;
@@ -174,11 +169,10 @@
   .button-container {
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    gap: 10px;
   }
 
   button {
-    padding-inline: 15px;
     padding-block: 10px;
   }
 
@@ -188,6 +182,7 @@
     border: none;
     color: white;
     font-weight: bold;
+    width: 140px;
   }
 
   .firefox-button {
@@ -196,6 +191,7 @@
     border-radius: 5px;
     border: none;
     font-weight: bold;
+    width: 140px;
   }
 
   /*-------------------------- section -------------------------------*/
@@ -305,6 +301,7 @@
     top: 0px;
     display: none;
     width: 100%;
+    gap: 50px;
   }
 
   .active{
@@ -312,51 +309,57 @@
   }
 
   .section img {
+    margin-left: -80px;
     width: 80%;
   }
 
   .placeholder-middle-1 {
     background: var(--Soft-Blue);
-    width: 100%;
-    height: 400px;
+    width: 800px;
+    height: 350px;
     border-bottom-right-radius: 140px;
     z-index: -1;
     position: absolute;
-    top: 50px;
-    left: -420px;
+    top: 80px;
+    left: -460px;
   }
 
   .placeholder-middle-2 {
     background: var(--Soft-Blue);
-    width: 100%;
-    height: 400px;
-    border-bottom-right-radius: 140px;
-    z-index: -1;
-    position: absolute;
-    top: 50px;
-    left: -420px;
-  }
-
-    .placeholder-middle-3 {
-    background: var(--Soft-Blue);
-    width: 100%;
-    height: 400px;
+    width: 700px;
+    height: 350px;
     border-bottom-right-radius: 140px;
     z-index: -1;
     position: absolute;
     top: 100px;
-    left: -420px;
+    left: -460px;
+  }
+
+    .placeholder-middle-3 {
+    background: var(--Soft-Blue);
+    width: 700px;
+    height: 350px;
+    border-bottom-right-radius: 140px;
+    z-index: -1;
+    position: absolute;
+    top: 100px;
+    left: -460px;
   }
 
   .section-inner{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    text-align: left;
   }
 
-  .section h1 {
+  .section-inner h1 {
     margin-top: 50px;
+  }
+
+  .section-inner p {
+    text-align: left;
+    width: 360px;
   }
 
   .more-info {
@@ -365,6 +368,7 @@
     border: none;
     color: white;
     font-weight: bold;
+    width: 100px;
   }
 
   .section-download {
@@ -377,13 +381,14 @@
 
   .section-download p {
     padding-block: 20px;
+    width: 500px;
   }
 
   .extension-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .logo-content {
@@ -495,9 +500,10 @@
 
   .input-content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 320px;
     margin-top: 20px;
+    gap: 10px;
   }
 
   input{
@@ -505,10 +511,11 @@
     text-align: center;
     border: none;
     border-radius: 5px;
+    width: 200px;
   }
 
   button{
-    margin-top: 10px;
+    width: 120px;
     background-color: var(--Soft-Red);
     border: none;
     border-radius: 5px;
@@ -518,25 +525,45 @@
 
   .footer-bottom {
     background-color: var(--Very-Dark-Blue);
-    width: 100vw;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 100px;
   }
 
-  .footer-bottom p{
-    padding-block: 10px;
+  .logo-footer{
+    padding-inline: 40px;
+  }
+
+  .footer-bottom a{
+    padding-inline: 30px;
     font-weight: 700;
+    color: var(--Grayish-Blue);
   }
 
   .social-icons{
     display: flex;
     justify-content: space-between;
     width: 80px;
-    margin-top: 50px;
+    margin-left: 600px;
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 768px) {}
+@media only screen and (min-width: 1100px) and (max-width: 1920px) {
+    .extension-content {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+  }
+  .top-1{
+    margin-top: 50px;
+  }
+  .top-2{
+    margin-top: 100px;
+  }
+  .top-3{
+  margin-top: 150px;
+  }
+}
